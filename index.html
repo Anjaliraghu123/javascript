@@ -3,48 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
     <link rel="stylesheet" href="./index.css">
-    <title>Modern light</title>
 </head>
 <body>
- <div class="hero">
-  <nav>
-    <img src="./menu.png" class="menu-img">
-    <img src="./logo.png" class="logo">
-    <ul>
-      <li><a href="">Latest</a></li>
-      <li><a href="">Modern</a></li>
-      <li><a href="">Contemporary</a></li>
-      <li><a href="">Affordable</a></li>
-    </ul>
-    <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
-  </nav>
-  <div class="lamp-container">
-    <img src="./lamp.png" class="lamp">
-    <img src="./light.png" class="light" id="light">
-  </div>
-   <div class="text-container">
-    <h1>Latest  <br> in Lighting</h1>
-    <p>this is the first lamp from our compeny.we re'making a huge collection
-      of modren lamp in all categories from home use to office use.
-    </p>
-    <a href="#">Click All Collection</a>
-    <div class="control">
-      <p>04</p>
-      <div class="line"><span></span></div>
-      <p>05</p>
-
+     <div class="container">
+      <button type="submit" class="btn" onclick="openpopup()">submit</button>
+      <div class="popup" id="popup">
+      <img src="./404-tick.png">
+      <h2>Thank you!</h2>
+      <p>your details has been successfully submiteed. Thank!</p>
+      <button type="btn" onclick="closepopup()">ok</button>
+      </div>  
     </div>
-
-   </div>
- </div>
-  <script>
-    var btn = document.getElementById("btn");
-    var light = document.getElementById("light"); 
-    function toggleBtn(){
-      btn.classList.toggle("active");
-      light.classList.toggle("on")
-     }
-  </script>  
+    <script>
+       let popup = document.getElementById("popup");
+       
+       
+       function openpopup(){
+        popup.classList.add("open-popup");
+       }
+       function closepopup(){
+        popup.classList.remove("close-popup");
+       }
+    </script> 
 </body>
 </html>
