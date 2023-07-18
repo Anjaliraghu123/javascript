@@ -2,30 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up</title>
-    <link rel="stylesheet" href="./one.css">
+    <title>To-Do List</title>
+   <link rel="stylesheet" href="./one.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <h1>Sign Up</h1>
-        
-        <form action="#">
-            <input type="text"placeholder="Username">
-            <input type="text"placeholder="Name">
-            <input type="password"placeholder="Password">
-            <input type="password"placeholder="Re-Enter Password">
-     </form>
-     <div class="terms">
-        <input type="checkbox" id="checkbox">
-        <label type="checkbox">I agree to these<a 
-        href="#">Terms and Condition</a></label>
-    </div>
-    <button>Sign Up</button>
-    <div class="member">
-      Already a member?<a href="./login.html">Login here</a> 
-    </div>
-    </div>
-  </body> 
+    <div class="container">
+   <div class="todo-app">
+    <h2>To-DO List <img src="./icon.png"></h2>
+  <div class="row">
+    <input type="text" id="input-box" placeholder="Add your text">
+    <button onclick="addTask()">Add</button>
+  </div>   
+<ul id="list-continer">
+  <!----  <li class="checked">Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>-->
+
+ </ul>
+</div>
+</div>
+  <script src="./script.js"></script>  
+</body>
 </html>
